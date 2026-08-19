@@ -16,3 +16,14 @@ else:
 
 
 # better alternative:
+if Emp_ID <= 0 or status not in ["Active", "Inactive"] or level < 1 or level > 5:
+    print("Invalid Input")
+elif status == "Active":
+    if level == 5:
+        print("Full Access")
+    elif level >= 3:
+        print("Limited Access")
+    else:
+        print("Access Denied")
+else:
+    print("Access Denied")
